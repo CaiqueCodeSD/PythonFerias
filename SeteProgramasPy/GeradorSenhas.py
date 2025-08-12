@@ -4,6 +4,7 @@
 import random
 import string
 
+print("=== GERADOR DE SENHAS ===")
 comprimento = int(input("Insira o tamanho da senha: "))
 
 caracEspeciais = (
