@@ -36,6 +36,6 @@ Conversão de tipos (str → int/float)
 - [x] Tratamento de exceções (`try/except`)
 - [ ] Calculadora básica
 - [ ] Conversor de temperaturas
-- [ ] Simulador de caixa eletrônico
+- [x] Simulador de caixa eletrônico
 - [ ] Manipulação de listas e dicionários
 - [ ] Estruturas de dados (pilhas, filas)
