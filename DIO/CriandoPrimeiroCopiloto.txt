@@ -1,0 +1,64 @@
+Passo a Passo: Criando seu primeiro Copiloto no Microsoft Copilot Studio
+
+1. Acesso e Licenciamento
+
+* Acesse o portal em `https://copilotstudio.microsoft.com` e faça login com sua conta Microsoft 365 (pessoal ou institucional). Se ainda não tiver acesso, você pode iniciar um **período de avaliação gratuito** ([GitHub Microsoft][1]).
+* Confirme que está no ambiente (environment) correto — desenvolvimento ou teste ([GitHub Microsoft][1]).
+
+2. Criando o Copiloto
+
+* No menu lateral, clique em **Create** e escolha **New Copilot** (“Novo agente” em algumas versões da interface) ([Microsoft Learn][2], [GitHub Microsoft][3]).
+* Descreva o propósito do Copiloto de forma clara e conversacional. Por exemplo:
+
+  > “Você é um Copiloto Tutor amigável. Ajuda usuários a aprender como criar copilotos, com estilo de conversa paciente e claro.”
+  > Esse texto serve como base para o nome, descrição, instruções e fontes de conhecimento do seu Copiloto ([Microsoft Learn][2]).
+
+3. Configurando Nome, Instruções e Ícone
+
+* Preencha:
+
+  * **Nome**: exemplo “Copiloto Tutor”.
+  * **Descrição**: breve explicação da função.
+  * **Instruções**: defina tom de voz, objetivo e limitações, com linguagem clara e detalhada ([Microsoft Learn][2]).
+* Adicione um ícone clicando no ícone do Copiloto no topo, “Change icon”, e faça upload de um arquivo **PNG menor que 30 KB** ([Microsoft Learn][2]).
+
+4. Adicionar Fontes de Conhecimento
+
+* Na aba **Overview**, vá até a seção **Knowledge** e clique em **Add knowledge**.
+* Escolha um tipo de fonte (por exemplo, **Public websites**) e insira a URL relevante, como um site ou repositório interno. Dê nome e descrição à fonte e confirme a adição ([Microsoft Learn][2], [GitHub Microsoft][3]).
+
+5. Construindo Tópicos e Fluxos de Conversa
+
+* Navegue à aba **Topics** e clique em **Add → Topic → From blank** para criar um novo tópico ([SharePoint e Azure][4]).
+* Defina **frases disparadoras** (trigger phrases), como “Como resetar senha?”, e construa o fluxo com mensagens, perguntas, variáveis ou integração com Power Automate para ações complexas ([SharePoint e Azure][4], [Dellenny][5]).
+
+6. Testando o Copiloto
+
+* Use o painel **Test your copilot** (geralmente à direita) para simular conversas. É possível ativar a opção "Track between topics" para acompanhar a execução do fluxo, ver o caminho seguido e ajustar conforme necessário ([SharePoint e Azure][4]).
+* Teste com diferentes inputs e refine seus tópicos, instruções ou fontes.
+
+7. Publicando o Copiloto
+
+* Quando estiver satisfeito, clique em **Publish**. Em seguida, confirme a publicação e aguarde o banner verde de sucesso ([Microsoft Learn][2]).
+* Acesse o site de demonstração via menu (três pontos ou comando “Go to demo website”) e compartilhe a URL para que outros testem ([Microsoft Learn][6]).
+* Você também pode integrar o Copiloto a canais como Microsoft Teams, sites, apps personalizados, etc. ([Dellenny][5], [Blog Sibasi][7]).
+
+Dica Rápida: Estrutura de um Copiloto básico
+
+| Elemento              | O que incluir                                                             |
+| --------------------- | ------------------------------------------------------------------------- |
+| Nome & Descrição      | Identificadores claros. Ex: “Copiloto Tutor” — “Ajuda a criar copilotos”. |
+| Instruções            | Tom, objetivos, contexto. Ex: “ajude de forma amigável e didática”.       |
+| Fonte de Conhecimento | URLs públicas ou internas, SharePoint, documentos.                        |
+| Tópicos               | Fluxos conversacionais com perguntas, mensagens e ações.                  |
+| Testes                | Simule com todo tipo de entrada e refinar conforme resposta.              |
+| Publicação            | Deploy com link ou integração com canais (Teams, web, apps).              |
+
+---
+
+Outras considerações importantes
+
+Licenciamento**: para criar e gerenciar copilotos você precisa de licença (usuário + tenant), mas quem usar o copiloto publicado **não precisa de licença especial** ([Reddit][8]).
+Ambientes distintos**: agentes criados no Copilot Studio não aparecem automaticamente no M365 Copilot, pois são plataformas separadas — você precisaria publicá-los manualmente ou recriá-los ([Reddit][9]).
+Compartilhamento via Teams**: ao publicar, você pode configurar o canal Teams e disponibilizar o Copiloto como um aplicativo dentro da organização ([Reddit][9]).
+
