@@ -1,0 +1,76 @@
+🧩 Criando um Copiloto com Fluxo de Conversa Personalizado no Microsoft Copilot Studio
+
+1. Acesso e Preparação
+
+Entre em copilotstudio.microsoft.com e faça login com sua conta Microsoft 365.
+
+Confirme que está no ambiente certo (teste ou produção). Caso não tenha licença, use o período de avaliação.
+
+2. Iniciando o Copiloto
+
+No painel lateral, clique em Create → New Copilot.
+
+Defina:
+
+Nome: ex. “Copiloto de Suporte Técnico”.
+Descrição: breve resumo da função do Copiloto.
+
+Instruções: explique tom de voz, objetivo e limites do agente.
+
+3. Criando um Fluxo de Conversa
+
+Vá até a aba Topics.
+Clique em + Add → Topic → From blank. Isso abre o editor de fluxo de conversa personalizado
+Estruture o fluxo em nós (blocos) conectados, que podem incluir:
+
+Mensagens: respostas automáticas.
+Perguntas: para coletar dados do usuário.
+Condições: ramos lógicos “se… então…”.
+Ações: integração com Power Automate, APIs ou bases de dados.
+
+Exemplo simples:
+Trigger: “Quero resetar minha senha”.
+Pergunta: “Você está usando email corporativo ou pessoal?”
+
+Condições:
+
+Se corporativo → orientar sobre o portal interno.
+Se pessoal → encaminhar para página de redefinição do Outlook.
+
+4. Personalizando a Experiência
+
+Ajuste o tom da conversa: amigável, formal, instrutivo, conforme o público-alvo.
+Use variáveis para armazenar informações coletadas, como nome, email ou número de protocolo.
+Crie subfluxos reutilizáveis para situações comuns, como saudações ou encerramento de atendimento.
+
+5. Testando o Fluxo
+
+Abra o painel Test your copilot à direita e simule interações.
+Acompanhe o caminho seguido no fluxo para verificar se as condições e mensagens funcionam corretamente.
+Ajuste até que o fluxo esteja natural e coerente.
+
+6. Publicação
+
+Clique em Publish para disponibilizar o Copiloto.
+Compartilhe via link de demonstração ou integre em Microsoft Teams, sites ou aplicativos personalizados.
+Após publicar, continue monitorando as conversas e refine os fluxos conforme o uso real.
+
+⚡ Dicas Práticas
+
+Comece com fluxos simples e vá evoluindo para ramificações mais complexas.
+Sempre mapeie cenários de conversa reais (dúvidas frequentes, etapas de processos) antes de criar os tópicos.
+Use Power Automate para ações dinâmicas, como abrir chamados, enviar emails ou consultar sistemas.
+Teste constantemente: uma boa experiência depende de clareza e consistência.
+
+📝 Estrutura de um Fluxo Personalizado
+
+| Elemento        | Função no Fluxo                                                          |
+| --------------- | ------------------------------------------------------------------------ |
+| Trigger phrases | Palavras-chave que iniciam o fluxo (“resetar senha”, “preciso de ajuda”) |
+| Mensagens       | Texto de resposta do Copiloto                                            |
+| Perguntas       | Coleta de informações (nome, email, opção escolhida)                     |
+| Condições       | Caminhos diferentes baseados em respostas do usuário                     |
+| Ações externas  | Integração com Power Automate, APIs ou sistemas internos                 |
+| Subfluxos       | Reuso de blocos como boas-vindas ou encerramento                         |
+
+👉 Em resumo: criar um Copiloto com fluxo de conversa personalizado no Microsoft Copilot Studio significa transformar simples respostas automáticas em diálogos estruturados, inteligentes e interativos, usando mensagens, perguntas, condições e integrações para entregar valor real ao usuário.
